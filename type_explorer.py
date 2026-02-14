@@ -10,12 +10,17 @@ x=5
 print(type(x))  # This will output <class 'int'>, indicating that x is an integer
 class - Python ir objektorientēta valoda, un katram datu tipam ir sava klase. Piemēram, int tips pieder klasei int, un str tips pieder klasei str. Mēs varam izmantot funkciju type(), lai noskaidrotu, kurai klasei pieder konkrēts objekts.
 
-
+Piemērs
 # virkņu savienošana - Python neveic automātisku tipu konvertēšanu, tāpēc, ja mēģināsim savienot virkni ar skaitli, tas radīs kļūdu. Mēs varam izmantot funkciju int() vai float(), lai konvertētu virkni uz skaitli, ja tas ir iespējams.
 print("5" + "3")  # This will concatenate the strings and output "53"
 # print("5"+3)    # This will raise a TypeError because you cannot concatenate a string and an integer
 print (int("5") + 3)  # This will convert the string "5" to an integer and then add it to 3, resulting in 
 
+studijas
+print("17"+"28" + "35")  # Tiek apvienotas virknes un izvadīts "172835" Svarīgi saprast, nenotiek matemātiskā saskaitīšana, bet gan virkņu savienošana
+print(int("17") + int("28") + int("35"))  # Tiek konvertētas virknes uz veseliem skaitļiem un izvadīts 80
+print(type("17"+"28" + "35"))  # Tiek parādīts, ka rezultāts ir string (str) tips
+print(type(int("17") + int("28") + int("35")))  # Tiek parādīts, ka rezultāts ir integer (int) tips
 
 # Robežgadījumi - Python ir dažādi datu tipi, un katram no tiem ir savas īpašības un ierobežojumi. Piemēram, int tips var saturēt ļoti lielus skaitļus, bet float tips var saturēt tikai noteiktu precizitāti. Ja mēs mēģinām izmantot skaitli, kas pārsniedz int tipa robežas, tas var radīt kļūdu.
 
