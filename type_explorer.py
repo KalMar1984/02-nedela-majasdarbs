@@ -31,6 +31,7 @@ print(float("3.14"))        # Tiek konvertēta virkne "3.14" uz float un izvadī
 studijas 
 explicid conversion - Python neveic automātisku tipu konvertēšanu, tāpēc mums ir jāveic eksplicīta konversija, ja vēlamies savienot dažādus datu tipus. Piemēram, ja vēlamies savienot virkni ar skaitli, mums ir jākonvertē skaitlis uz virkni vai virkne uz skaitli, atkarībā no tā, kādu rezultātu mēs vēlamies sasniegt. Jānorāda kurai klasei pieder objekts, lai izvairītos no kļūdām un panāktu pareizu rezultātu.   
 # print(str("abc"))  # tiek konvertēta virkne "abc" uz string, kas ir derīgs datu tips, un izvadīts "abc"
+walueError - Python izraisīs ValueError kļūdu, ja mēģināsim konvertēt datus uz skaitli, bet dati nav derīgā formātā. Piemēram, mēģinot konvertēt virkne "abc" uz int vai float, tas radīs ValueError kļūdu, jo "abc" nav skaitlis un to nevar konvertēt uz int vai float. Lai izvairītos no šīs kļūdas, mums jāveic datu konvertēšana uz string, lai Python varētu apstrādāt datus kā tekstu, nevis mēģināt konvertēt tos uz skaitli.
 print(float("3,14")) # kļūda, jo "3,14" nav derīgs float formāts, komats nav atļauts decimāldaļas skaitļos
 a = input(5)
 b = input(3)

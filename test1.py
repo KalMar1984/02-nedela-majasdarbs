@@ -1,1 +1,0 @@
-print(bool(0))    # Tiek konvertēts skaitlis 0 uz boolean, rezultāts būs False, jo 0 tiek uzskatīts par falsy
